@@ -1,0 +1,45 @@
+{
+  "name": "@benbraide/inlinejs-plugins",
+  "version": "1.0.0",
+  "description": "Run javascript code by embedding them in your HTML using the element as context.",
+  "files": [
+    "dist/",
+    "lib/"
+  ],
+  "scripts": {
+    "compile": "tsc -p ./tsconfig.json && tsc -p ./tsconfig.esm.json",
+    "prepublishOnly": "npm run compile",
+    "build": "webpack -c ./webpack.config.js && webpack -c ./webpack2.config.js",
+    "upload": "npm run build && npm publish --access=public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benbraide/inlinejs-plugins.git"
+  },
+  "keywords": [
+    "javascript",
+    "reactive",
+    "framework",
+    "html",
+    "attribute",
+    "embed"
+  ],
+  "author": "Benebo Braide",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/benbraide/inlinejs-plugins/issues"
+  },
+  "homepage": "https://github.com/benbraide/inlinejs-plugins#readme",
+  "devDependencies": {
+    "ts-loader": "^9.2.3",
+    "webpack": "^5.41.0"
+  },
+  "dependencies": {
+    "@benbraide/inlinejs-animation": "^1.0.5",
+    "@benbraide/inlinejs-collections": "^1.0.3",
+    "@benbraide/inlinejs-moment": "^1.0.2",
+    "@benbraide/inlinejs-router": "^1.0.4",
+    "@benbraide/inlinejs-screen": "^1.0.2",
+    "webpack-cli": "^4.7.2"
+  }
+}
