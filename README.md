@@ -8,6 +8,7 @@ This is a bundle for the following [InlineJS](https://github.com/benbraide/Inlin
 - [Collections](https://github.com/benbraide/inlinejs-collections)
 - [Router](https://github.com/benbraide/inlinejs-router)
 - [Moment](https://github.com/benbraide/inlinejs-moment)
+- [Alert](https://github.com/benbraide/inlinejs-alert)
 
 > :loudspeaker: Bundling packages reduces the final file size when compared to the sum of the sizes of the individual packages.
 
