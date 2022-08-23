@@ -98,6 +98,7 @@ import {
 } from '@benbraide/inlinejs-moment';
 
 import {
+    AlertConcept,
     AlertMagicHandlerCompact
 } from '@benbraide/inlinejs-alert';
 
@@ -274,6 +275,7 @@ WaitForGlobal().then(() => {
 
     //Begin: inlinejs-alert
     
+    GetGlobal().SetConcept('alert', new AlertConcept);
     AlertMagicHandlerCompact();
 
     //End: inlinejs-alert
