@@ -1,6 +1,6 @@
 {
   "name": "@benbraide/inlinejs-plugins",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "Run javascript code by embedding them in your HTML using the element as context.",
   "files": [
     "dist/",
@@ -40,7 +40,7 @@
     "@benbraide/inlinejs-animation": "^1.0.12",
     "@benbraide/inlinejs-collections": "^1.0.7",
     "@benbraide/inlinejs-moment": "^1.0.6",
-    "@benbraide/inlinejs-router": "^1.0.14",
+    "@benbraide/inlinejs-router": "^1.0.15",
     "@benbraide/inlinejs-screen": "^1.0.6",
     "webpack-cli": "^4.7.2"
   }
