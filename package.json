@@ -1,6 +1,6 @@
 {
   "name": "@benbraide/inlinejs-plugins",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "description": "Run javascript code by embedding them in your HTML using the element as context.",
   "files": [
     "dist/",
@@ -11,7 +11,8 @@
     "prepublishOnly": "npm run compile",
     "build": "webpack -c ./webpack.config.js && webpack -c ./webpack2.config.js",
     "upload": "npm run build && npm publish --access=public",
-    "push": "npm i @benbraide/inlinejs-animation @benbraide/inlinejs-collections @benbraide/inlinejs-moment @benbraide/inlinejs-router @benbraide/inlinejs-screen @benbraide/inlinejs-alert  && npm run upload"
+    "install-deps": "npm i @benbraide/inlinejs-animation @benbraide/inlinejs-collections @benbraide/inlinejs-moment @benbraide/inlinejs-router @benbraide/inlinejs-screen @benbraide/inlinejs-alert",
+    "push": "npm run install-deps  && npm run upload"
   },
   "repository": {
     "type": "git",
@@ -36,12 +37,12 @@
     "webpack": "^5.41.0"
   },
   "dependencies": {
-    "@benbraide/inlinejs-alert": "^1.0.11",
-    "@benbraide/inlinejs-animation": "^1.0.12",
-    "@benbraide/inlinejs-collections": "^1.0.7",
-    "@benbraide/inlinejs-moment": "^1.0.6",
-    "@benbraide/inlinejs-router": "^1.0.16",
-    "@benbraide/inlinejs-screen": "^1.0.6",
+    "@benbraide/inlinejs-alert": "^1.0.12",
+    "@benbraide/inlinejs-animation": "^1.0.13",
+    "@benbraide/inlinejs-collections": "^1.0.9",
+    "@benbraide/inlinejs-moment": "^1.0.7",
+    "@benbraide/inlinejs-router": "^1.0.18",
+    "@benbraide/inlinejs-screen": "^1.0.8",
     "webpack-cli": "^4.7.2"
   }
 }
